@@ -1,0 +1,5 @@
+SigninController = AppController.extend({
+  data: {
+
+  }
+});

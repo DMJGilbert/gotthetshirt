@@ -1,0 +1,3 @@
+Template.signin.rendered = function() {
+
+};
