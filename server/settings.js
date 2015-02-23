@@ -24,3 +24,12 @@ ServiceConfiguration.configurations.insert({
     clientId: Meteor.settings.google.clientId,
     secret: Meteor.settings.google.secret
 });
+
+ServiceConfiguration.configurations.remove({
+    service: 'weibo'
+});
+ServiceConfiguration.configurations.insert({
+    service: 'weibo',
+    clientId: Meteor.settings.weibo.clientId,
+    secret: Meteor.settings.weibo.secret
+});

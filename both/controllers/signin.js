@@ -26,4 +26,11 @@ SigninController.events({
 
         });
     },
+	"click #weibo": function (e, tmpl) {
+        Meteor.loginWithWeibo({
+
+        }, function () {
+
+        });
+    }
 });

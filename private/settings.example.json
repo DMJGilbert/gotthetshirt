@@ -10,5 +10,9 @@
     "google" : {
         "clientId": "",
         "secret": ""
+    },
+    "weibo" : {
+        "clientId": "",
+        "secret": ""
     }
 }
