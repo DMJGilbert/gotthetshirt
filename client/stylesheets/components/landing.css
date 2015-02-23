@@ -1,0 +1,32 @@
+#hero {
+    background-color: #333;
+    min-height: 50vh;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#hero > #background {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero h1 {
+    color: #eee;
+    margin: 0;
+}
+
+#hero h2 {
+    color: #ccc;
+    margin: 0;
+}
+
+#hero h2:first-of-type{
+    margin-top: 12vh;
+}

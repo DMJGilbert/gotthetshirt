@@ -1,18 +1,22 @@
 <template name="_header">
-
-    <div class="ui inverted vertical segment" role="navigation">
+    <nav class="ui inverted gray vertical segment" role="navigation">
         <div class="ui page grid">
-            <div class="fourteen wide column">
-                <a class="navbar-brand" href="{{pathFor 'signin'}}">
+            <div class="eight wide column">
+                <a class="navbar-brand" href="{{pathFor 'landing'}}">
                     <h2 class="ui inverted header">gotthetshirt</h2>
                 </a>
             </div>
             {{#if currentUser}}
-            <div class="two wide column">
-                <h2 class="ui inverted center aligned header"><i class="content icon"></i></h2>
+            <div class="right aligned eight wide column">
+                <div class="ui tiny inverted basic button"><i class="content icon"></i></div>
+            </div>
+            {{else}}
+            <div class="right aligned eight wide column">
+                <a href="{{pathFor 'signin'}}" class="ui tiny inverted basic button">
+                    Signin
+                </a>
             </div>
             {{/if}}
         </div>
-    </div>
-
+    </nav>
 </template>

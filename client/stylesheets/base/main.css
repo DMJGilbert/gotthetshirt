@@ -1,0 +1,29 @@
+html {
+    position: relative;
+    min-height: 100%;
+    height: auto;
+}
+
+body {
+    padding-bottom: 50px;
+    height: auto;
+    min-height: 100%;
+}
+
+nav{
+    z-index: 10;
+}
+
+footer {
+    position: absolute !important;
+    bottom: 0;
+    width: 100% !important;
+}
+
+.ui.inverted.gray.segment{
+    background-color: #434954 !important
+}
+
+.g-recaptcha > div > div{
+    margin: 10px auto 0px;
+}
