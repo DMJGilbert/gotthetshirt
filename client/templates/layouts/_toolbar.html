@@ -1,0 +1,24 @@
+<template name="_toolbar">
+	{{#if currentUser}}
+	<nav class="ui vertically padded page grid" id="menu">
+		<div class="ui basic inverted gray attached segment row">
+			<div class="sixteen wide column">
+				Hey, {{currentUser.profile.name}}
+			</div>
+		</div>
+		<div class="ui inverted attached gray segment row">
+			<div class="sixteen wide column">
+				<div class="ui basic inverted fluid transparent left icon input">
+					<i class="search icon"></i>
+					<input type="text" placeholder="Search...">
+				</div>
+			</div>
+		</div>
+		<div class="ui basic inverted gray attached segment row">
+			<div class="sixteen wide column" data-action="logout">
+				<i class="sign out icon"></i> Signout
+			</div>
+		</div>
+	</nav>
+	{{/if}}
+</template>

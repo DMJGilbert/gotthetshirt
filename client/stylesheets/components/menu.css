@@ -1,0 +1,25 @@
+#menu {
+	position: absolute;
+	width: 100%;
+}
+
+#menu .icon {
+	color: #ffffff;
+	opacity: 1;
+}
+
+#menu input::-webkit-input-placeholder {
+	color: #ffffff;
+}
+
+#menu input:-moz-placeholder {
+	color: #ffffff;
+}
+
+#menu input::-moz-placeholder {
+	color: #ffffff;
+}
+
+#menu input:-ms-input-placeholder {
+	color: #ffffff;
+}

@@ -6,31 +6,15 @@ SigninController = RootController.extend({
 
 SigninController.events({
     "click #facebook": function (e, tmpl) {
-        Meteor.loginWithFacebook({
-
-        }, function () {
-
-        });
+        Meteor.loginWithFacebook();
     },
     "click #twitter": function (e, tmpl) {
-        Meteor.loginWithTwitter({
-
-        }, function () {
-
-        });
+        Meteor.loginWithTwitter();
     },
     "click #google": function (e, tmpl) {
-        Meteor.loginWithGoogle({
-
-        }, function () {
-
-        });
+        Meteor.loginWithGoogle();
     },
 	"click #weibo": function (e, tmpl) {
-        Meteor.loginWithWeibo({
-
-        }, function () {
-
-        });
+        Meteor.loginWithWeibo();
     }
 });

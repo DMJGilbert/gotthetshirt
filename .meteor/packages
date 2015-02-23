@@ -8,7 +8,6 @@ accounts-ui
 accounts-twitter
 accounts-facebook
 accounts-google
-nooitaf:semantic-ui
 mrt:moment
 dburles:collection-helpers
 matb33:collection-hooks
@@ -19,3 +18,4 @@ useraccounts:semantic-ui
 service-configuration
 yasinuslu:blaze-meta
 accounts-weibo
+nooitaf:semantic-ui

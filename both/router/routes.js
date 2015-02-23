@@ -4,7 +4,7 @@ Router.route('/', {
 
 Router.onBeforeAction(function () {
     if (Meteor.isCordova) {
-        if (!Meteor.user() && this.ready()) {
+        if (!Meteor.userId()) {
             return this.redirect('/signin');
         } else {
             return this.redirect('/app');
@@ -17,7 +17,18 @@ Router.onBeforeAction(function () {
 });
 
 Router.onBeforeAction(function () {
-    if (!Meteor.user() && this.ready()) {
+    if (Meteor.userId()) {
+        return this.redirect('/app');
+    } else {
+        return this.next();
+    }
+}, {
+    only: ['signin']
+});
+
+Router.onBeforeAction(function () {
+    if (!Meteor.userId()) {
+        console.log("Please signin to view this page")
         return this.redirect('/signin');
     } else {
         return this.next();
