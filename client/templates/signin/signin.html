@@ -1,34 +1,32 @@
 <template name="signin">
-    <div class="sixteen wide column" id="loginBox">
-        {{#if logginIn}}
-            {{> signingIn}}
-        {{else}}
-            {{> buttons}}
-        {{/if}}
-    </div>
+	<div class="ui page grid">
+		<div class="sixteen wide column" id="loginBox">
+			{{#if logginIn}} {{> signingIn}} {{else}} {{> buttons}} {{/if}}
+		</div>
+	</div>
 </template>
 
 <template name="signingIn">
-    <div class="ui loading segment">
-        <p>Signing in...</p>
-    </div>
+	<div class="ui loading segment">
+		<p>Signing in...</p>
+	</div>
 </template>
 
 <template name="buttons">
-    <div class="ui top attached segment">
-        <h2 class="ui header">Sign in</h2>
-        <p>Gotthetshirt allows to to collate all the artists/bands you have seen. As well as the ability to share them to rekindle old memories on various social media sites.</p>
-    </div>
-    <div class="ui inverted attached segment" id="twitter">
-        <i class="twitter icon"></i> Twitter
-    </div>
-    <div class="ui inverted attached segment" id="google">
-        <i class="google icon"></i> Google+
-    </div>
-    <div class="ui bottom inverted attached segment" id="facebook">
-        <i class="facebook icon"></i> Facebook
-    </div>
-    <div class="ui inverted bottom attached segment" id="weibo">
-        <i class="weibo icon"></i> Weibo
-    </div>
+	<div class="ui top attached segment">
+		<h2 class="ui header">Sign in</h2>
+		<p>Gotthetshirt allows to to collate all the artists/bands you have seen. As well as the ability to share them to rekindle old memories on various social media sites.</p>
+	</div>
+	<div class="ui inverted attached segment" id="twitter">
+		<i class="twitter icon"></i> Twitter
+	</div>
+	<div class="ui inverted attached segment" id="google">
+		<i class="google icon"></i> Google+
+	</div>
+	<div class="ui bottom inverted attached segment" id="facebook">
+		<i class="facebook icon"></i> Facebook
+	</div>
+	<div class="ui inverted bottom attached segment" id="weibo">
+		<i class="weibo icon"></i> Weibo
+	</div>
 </template>

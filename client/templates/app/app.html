@@ -1,3 +1,7 @@
 <template name="app">
-      <h1>App</h1>
+    <div class="sixteen wide column" id="map">
+    	{{> googleMap name="ticketMap" options=mapOptions}}
+    </div>
+
+	{{> tickets }}
 </template>
