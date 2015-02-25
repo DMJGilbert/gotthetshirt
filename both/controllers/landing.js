@@ -4,24 +4,6 @@ LandingController = RootController.extend({
 	}
 });
 
-//Template.landing.rendered(function () {
-//	var menu = document.getElementById('menu');
-//	if(menu){
-//		menu.style.display = 'none';
-//	}
-//	this.next();
-//});
-
-Router.onBeforeAction(function () {
-	var menu = document.getElementById('menu');
-	if(menu){
-		menu.style.display = 'none';
-	}
-	this.next();
-}, {
-	only: ['landing', 'signin']
-});
-
 LandingController.events({
 	"submit form#subscribe": function (e, tmpl) {
 		e.preventDefault();

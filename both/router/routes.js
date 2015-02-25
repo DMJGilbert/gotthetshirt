@@ -1,6 +1,6 @@
-Router.route('/', {
-    name: 'landing'
-});
+Router.route('/', {name: 'landing'});
+Router.route('/signin');
+Router.route('/app');
 
 Router.onBeforeAction(function () {
     if (Meteor.isCordova) {
@@ -23,12 +23,15 @@ Router.onBeforeAction(function () {
         return this.next();
     }
 }, {
-    only: ['signin']
+    only: ['signin', 'landing']
 });
 
 Router.onBeforeAction(function () {
+	var menu = document.getElementById('menu');
+	if(menu){
+		menu.style.display = 'none';
+	}
     if (!Meteor.userId()) {
-        console.log("Please signin to view this page")
         return this.redirect('/signin');
     } else {
         return this.next();
@@ -36,5 +39,3 @@ Router.onBeforeAction(function () {
 }, {
     except: ['signin', 'landing']
 });
-Router.route('/signin');
-Router.route('/app');
