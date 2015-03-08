@@ -3,3 +3,4 @@
 *.sublime-workspace
 dump
 private/settings.json
+/npm-debug.log

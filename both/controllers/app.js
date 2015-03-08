@@ -1,6 +1,9 @@
 AppController = RootController.extend({
+	waitOn: function () {
+		return this.subscribe('tickets');
+	},
 	data: {
-
+		tickets: Tickets.find({})
 	}
 });
 
