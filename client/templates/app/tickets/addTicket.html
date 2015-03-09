@@ -1,0 +1,32 @@
+<template name="addTicket">
+	<form class="ui form">
+		<h4 class="ui dividing header">Personal Information</h4>
+		<div class="two fields">
+			<div class="field">
+				<label>Artist</label>
+				<div class="field">
+					<input type="text" name="first-name" placeholder="Artist...">
+				</div>
+			</div>
+			<div class="field">
+			</div>
+		</div>
+		<div class="two fields">
+			<div class="field">
+				<label>Venue</label>
+				<select class="ui search dropdown">
+					<option value="">State</option>
+					{{#each venues}} {{> venue this}} {{/each}}
+				</select>
+			</div>
+			<div class="field"></div>
+		</div>
+		<div class="two fields">
+			<div class="field">
+				<label>Venue</label>
+				<input type="date" name="ticketDate" placeholder="Date...">
+			</div>
+			<div class="field"></div>
+		</div>
+	</form>
+</template>
