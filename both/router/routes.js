@@ -1,6 +1,7 @@
 Router.route('/', {name: 'landing'});
 Router.route('/signin');
 Router.route('/app');
+Router.route('/addTicket');
 
 Router.onBeforeAction(function () {
     if (Meteor.isCordova) {
